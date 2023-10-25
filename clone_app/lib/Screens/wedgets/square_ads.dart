@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Padding SqAds(String imagePath) {  // Accepting imagePath as a parameter
+Padding SquareAds(String imagePath) {  // Accepting imagePath as a parameter
 
   return Padding(
     padding: const EdgeInsets.only(left: 10, bottom: 90, top: 50),

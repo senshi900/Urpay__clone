@@ -10,6 +10,8 @@ class MoreScreen extends StatefulWidget {
 class _MoreScreenState extends State<MoreScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: Center(child: Text("more screen")),);
+    return const Scaffold(
+      backgroundColor: Color(0xffF2F2F2),
+      body: Center(child: Text("more screen")),);
   }
 }

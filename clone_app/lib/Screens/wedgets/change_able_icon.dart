@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Container ChangeAbleIcon(IconData icon, Color color) {  // Now takes an IconData and a Color
+Container ChangeAbleIcon(IconData icon, Color color,double size) {  // Now takes an IconData and a Color
   return Container(
     height: 35,
     width: 35,
@@ -10,7 +10,7 @@ Container ChangeAbleIcon(IconData icon, Color color) {  // Now takes an IconData
     ),
     child: Icon(
       icon,  // Using the icon parameter
-      color: Colors.white,  // you can also make this a parameter if needed
+      color:  Colors.white, size:size , // you can also make this a parameter if needed
     ),
   );
 }

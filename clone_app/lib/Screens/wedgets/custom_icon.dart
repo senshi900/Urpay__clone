@@ -26,3 +26,29 @@ Padding CustomIcons() {
        ),
        );
   }
+
+
+  
+Padding CardIcon() {
+    return Padding(
+         padding: const EdgeInsets.only(top: 50,right: 20),
+         child: Stack(
+          alignment: AlignmentDirectional.center,
+          
+         children: <Widget>[
+         
+           Container(
+            child: Padding(
+              padding: const EdgeInsets.only(left: 18,top: 8),
+              child: Text("ف",style: TextStyle(color: Colors.white,fontSize: 17),),
+            ),
+             width: 44,
+             height: 44,
+             decoration: BoxDecoration(shape: BoxShape.circle,color: Color(0xff33994f))
+           ),
+           
+         ],
+       ),
+       );
+  }
+
