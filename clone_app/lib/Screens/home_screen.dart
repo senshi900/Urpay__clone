@@ -13,79 +13,82 @@ class HomeScreenn extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreenn> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       backgroundColor: Color(0xff0263b2),
-      
-      body:Column(children: [
-
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Padding(
-              padding: const EdgeInsets.only(left: 20),
-              child: Container(
-                height: 35,
-                width: 35,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(70),
-                  color: Color(0xff1c73ba),
+      body: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(left: 20),
+                child: Container(
+                  height: 35,
+                  width: 35,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(70),
+                    color: Color(0xff1c73ba),
+                  ),
+                  child: Icon(Icons.cloud_circle),
                 ),
-                child: Icon(Icons.cloud_circle),
               ),
-            ),
-             ChangeAbleIcon(Icons.abc,Colors.black)
-            ,
-         CustomIcons()
-       
-         
-            
-
-          ],
-        ),
-
-     
-          
-         Container(
+              ChangeAbleIcon(Icons.abc, Colors.black),
+              CustomIcons()
+            ],
+          ),
+          Container(
             height: 300,
             width: 380,
-           child: ListView(
-
-              
+            child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
-            
                 SqAds("lib\\imges\\WhatsApp Image 2023-10-24 at 17.23.35.jpg"),
                 SqAds("lib\\imges\\WhatsApp Image 2023-10-24 at 17.23.35.jpg"),
-                  SqAds("lib\\imges\\WhatsApp Image 2023-10-24 at 17.23.35.jpg"),
-                    SqAds("lib\\imges\\WhatsApp Image 2023-10-24 at 17.23.35.jpg"),
-                      SqAds("lib\\imges\\WhatsApp Image 2023-10-24 at 17.23.35.jpg"),
-                        SqAds("lib\\imges\\WhatsApp Image 2023-10-24 at 17.23.35.jpg"),
-                          SqAds("lib\\imges\\WhatsApp Image 2023-10-24 at 17.23.35.jpg"),
-                            SqAds("lib\\imges\\WhatsApp Image 2023-10-24 at 17.23.35.jpg"),
-                              SqAds("lib\\imges\\WhatsApp Image 2023-10-24 at 17.23.35.jpg"),
-
-                              
-                              
-
-
-                
+                SqAds("lib\\imges\\WhatsApp Image 2023-10-24 at 17.23.35.jpg"),
+                SqAds("lib\\imges\\WhatsApp Image 2023-10-24 at 17.23.35.jpg"),
+                SqAds("lib\\imges\\WhatsApp Image 2023-10-24 at 17.23.35.jpg"),
+                SqAds("lib\\imges\\WhatsApp Image 2023-10-24 at 17.23.35.jpg"),
+                SqAds("lib\\imges\\WhatsApp Image 2023-10-24 at 17.23.35.jpg"),
+                SqAds("lib\\imges\\WhatsApp Image 2023-10-24 at 17.23.35.jpg"),
+                SqAds("lib\\imges\\WhatsApp Image 2023-10-24 at 17.23.35.jpg"),
               ],
             ),
-         ),
-         
-         Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-          
-          ChangeAbleIcon(Icons.earbuds_battery, Color(0xff0e66ad)),
-          Text("data")
-         
-         ],)
-         
-       
-          ],
-    )
-    ,);
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ChangeAbleIcon(Icons.earbuds_battery, Color(0xff0e66ad)),
+              Text("رصيدك")
+            ],
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 30),
+            child: Text(
+              "91.33 ريال",
+              style: TextStyle(fontSize: 40),
+            ),
+          ),
+          Column(
+            children: [
+              ClipRRect(
+                borderRadius: BorderRadius.circular(16),
+                child: Container(
+                  height: 100,
+                  width: 100,
+                  color: Colors.grey,
+                  child: Column(
+                    children: [
+                      SizedBox(height: 15),
+                      ChangeAbleIcon(Icons.blinds_rounded, Colors.blue),
+                      Text("فواتير ")
+                    ],
+                  ),
+                ),
+              )
+            ],
+          )
+        ],
+      ),
+    );
   }
-
 }
