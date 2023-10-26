@@ -1,33 +1,35 @@
 import 'package:flutter/material.dart';
 
-Container ChangeAbleIcon(IconData icon, Color color,double size) {  // Now takes an IconData and a Color
+Container ChangeAbleIcon(IconData icon, Color color, double size) {
+  // Now takes an IconData and a Color
   return Container(
     height: 35,
     width: 35,
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(70),
-      color: color,  // Using the color parameter
+      color: color, // Using the color parameter
     ),
     child: Icon(
-      icon,  // Using the icon parameter
-      color:  Colors.white, size:size , // you can also make this a parameter if needed
+      icon, // Using the icon parameter
+      color: Colors.white,
+      size: size, // you can also make this a parameter if needed
     ),
   );
 }
 
-
-Container IconWithText(IconData icon, Color color,double size) {  // Now takes an IconData and a Color
+Container IconWithText(IconData icon, Color color, double size) {
+  // Now takes an IconData and a Color
   return Container(
     height: 35,
     width: 35,
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(70),
-      color: color,  // Using the color parameter
+      color: color, // Using the color parameter
     ),
     child: Icon(
-      icon,  // Using the icon parameter
-      color:  Colors.white, size:size , // you can also make this a parameter if needed
+      icon, // Using the icon parameter
+      color: Colors.white,
+      size: size, // you can also make this a parameter if needed
     ),
-    
   );
 }

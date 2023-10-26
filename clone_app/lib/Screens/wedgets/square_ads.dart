@@ -1,16 +1,20 @@
 import 'package:flutter/material.dart';
 
-Padding SquareAds(String imagePath) {  // Accepting imagePath as a parameter
+Padding SquareAds(String imagePath) {
+  // Accepting imagePath as a parameter
 
   return Padding(
-    padding: const EdgeInsets.only(left: 10, bottom: 90, top: 50),
+    padding: const EdgeInsets.only(right: 14),
     child: ClipRRect(
-      borderRadius: BorderRadiusDirectional.circular(16),
+      borderRadius: BorderRadius.circular(16),
       child: Container(
-        child: Image.asset(  imagePath, fit: BoxFit.fill,),  // Using the imagePath parameter
-        
-        width: 320,
-        color: Color(0xff01509b),
+        color: Colors.amber,
+        width: 350,
+        height: 150,
+        child: Image.asset(
+          imagePath,
+          fit: BoxFit.fill,
+        ),
       ),
     ),
   );
