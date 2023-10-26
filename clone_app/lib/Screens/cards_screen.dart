@@ -12,7 +12,9 @@ class CardsScreen extends StatefulWidget {
 
 class _CardsScreenState extends State<CardsScreen> {
   @override
+  
   Widget build(BuildContext context) {
+    
     return  Scaffold(
       backgroundColor: Color(0xffF2F2F2),
       
@@ -146,7 +148,11 @@ Material(
                        Spacer(),
                     Text("عمليات البطاقة",style: TextStyle(color: Color(0xff939393))),
                    
-                   Column()
+                   Column(children: [
+                    Row(children: [
+                      
+                    ],)
+                   ],)
                    
                   ],
                   ),
