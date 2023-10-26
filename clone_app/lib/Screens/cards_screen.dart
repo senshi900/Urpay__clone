@@ -14,7 +14,7 @@ class CardsScreen extends StatefulWidget {
 
 class _CardsScreenState extends State<CardsScreen> {
   @override
-  List<History> buyhistory = [];
+List<History> buyhistory = [];
   @override
   void initState() {
     // TODO: implement initState
@@ -23,143 +23,143 @@ class _CardsScreenState extends State<CardsScreen> {
       buyhistory.add(History.fromjason(element));
     }
   }
-
+  
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xffF2F2F2),
       body: Column(children: [
         Container(
           color: Color(0xff024d91),
-          width: 500,
+        width: 500,
           child: Row(
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(top: 60, left: 20),
-                child: ChangeAbleIcon(Icons.add, Color(0xff024d91), 35),
-              ),
-              Spacer(),
+                       children: [
+                         Padding(
+               padding: const EdgeInsets.only(top: 60, left: 20),
+               child: ChangeAbleIcon(Icons.add, Color(0xff024d91), 35),
+             ),
+             Spacer(),
               Padding(
                 padding: const EdgeInsets.only(right: 10, top: 50),
                 child: Container(
                   height: 60,
                   child: Column(
                     children: [
-                      Text(
+                    Text(
                         "مساء الخير",
                         style: TextStyle(color: Colors.white),
                       ),
-                      Text("فيصل", style: TextStyle(color: Colors.white)),
-                    ],
-                  ),
+                    Text("فيصل", style: TextStyle(color: Colors.white)),
+                  ],
+                                    ),
                 ),
               ),
               CardIcon(),
-            ],
+                         ],
           ),
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Text(
+             Text(
               "بطاقات إمكان",
               style: TextStyle(fontSize: 15, color: Color(0xffe2c38c)),
             ),
-            Text(" urpay بطاقه",
+          Text(" urpay بطاقه",
                 style: TextStyle(fontSize: 15, color: Color(0xffdfae64))),
-          ],
+        ],
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Container(height: 5, width: 150, color: Color(0xfff2e2c7)),
-            Container(height: 5, width: 200, color: Color(0xfff6a732))
-          ],
+          Container(height: 5, width: 150, color: Color(0xfff2e2c7)),
+          Container(height: 5, width: 200, color: Color(0xfff6a732))
+        ],
         ),
-        SizedBox(
+       SizedBox(
           height: 30,
         ),
 // Wrapping with Material for shadow
-        Material(
-            // Adding elevation results in shadow
-            elevation: 5.0,
-            shadowColor:
+Material(
+  // Adding elevation results in shadow
+  elevation: 5.0,
+  shadowColor:
                 Colors.black.withOpacity(0.5), // Customize shadow color
-            borderRadius: BorderRadius.circular(12),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(12),
-              child: Container(
-                height: 220,
-                width: 350,
-                child: Image.asset(
-                  "lib\\imges\\card1.jpg", // Make sure the path to your image is correct
-                  fit: BoxFit.fill,
-                ),
-              ),
+  borderRadius: BorderRadius.circular(12),
+  child: ClipRRect(
+    borderRadius: BorderRadius.circular(12),
+    child: Container(
+      height: 220,
+      width: 350,
+      child: Image.asset(
+        "lib\\imges\\card1.jpg", // Make sure the path to your image is correct
+        fit: BoxFit.fill,
+      ),
+    ),
             )),
         Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              ClipRRect(
+      padding: const EdgeInsets.all(16.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          ClipRRect(
                   borderRadius: BorderRadiusDirectional.circular(8),
-                  child: Container(
+            child: Container(
                       color: Color(0xffffffff),
                       height: 50,
                       width: 166,
-                      child: Row(
+            child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Text("إعدادات البطاقة"),
-                          ),
-                          Icon(
+              children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text("إعدادات البطاقة"),
+              ),
+              Icon(
                             Icons.settings,
                             color: Color(0xfff2a542),
                           )
                         ],
                       ))),
               Padding(
-                padding: const EdgeInsets.all(4.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    ClipRRect(
+      padding: const EdgeInsets.all(4.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          ClipRRect(
                         borderRadius: BorderRadiusDirectional.circular(8),
-                        child: Container(
+            child: Container(
                             color: Color(0xffffffff),
                             height: 50,
                             width: 166,
-                            child: Row(
+            child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Text("قفل البطاقة"),
-                                ),
-                                Icon(
+              children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text("قفل البطاقة"),
+              ),
+              Icon(
                                   Icons.lock_outline,
                                   color: Color(0xfff2a542),
-                                )
-                              ],
+            )
+],
                             ))),
                   ],
-                ),
-              )
-            ],
+            ),
+          )   
+      ],
           ),
-        ),
-
-        Container(
-          height: 200,
-          width: 380,
-          child: ListView(
-            scrollDirection: Axis.vertical,
-            children: [
+    ),
+          
+          Container(
+            height: 200,
+            width: 380,
+            child: ListView(
+              scrollDirection: Axis.vertical,
+              children: [
               ClipRRect(
-                borderRadius: BorderRadiusDirectional.circular(16),
-                child: Container(
+                                borderRadius: BorderRadiusDirectional.circular(16),
+                    child: Container(
                     color: Color(0xffffffff),
                     height: 1000,
                     width: 300,
@@ -203,7 +203,7 @@ class _CardsScreenState extends State<CardsScreen> {
                                                     Column(
                                                       children: [
                                                         Text(
-                                                            " SAR ${buyhistory[index].price} "),
+                                                            " SAR ${buyhistory[index].price} ",style: TextStyle( color: buyhistory[index].price.startsWith("+")?Colors.green:Colors.red),),
                                                         Padding(
                                                           padding:
                                                               const EdgeInsets
@@ -212,18 +212,18 @@ class _CardsScreenState extends State<CardsScreen> {
                                                           child: Text(
                                                             "${buyhistory[index].date}",
                                                             style: TextStyle(
-                                                                fontSize: 9),
+                                                                fontSize: 9,),
                                                           ),
                                                         )
                                                       ],
                                                     ),
-                                                    Column(
+                                       Column(
                                                       children: [
-                                                        Row(
+                    Row(
                                                           children: [
                                                             Column(
                                                               children: [
-                                                                Text(
+                      Text(
                                                                     "${buyhistory[index].companyname}"),
                                                                 Text("مشتريات"),
                                                               ],
@@ -242,19 +242,19 @@ class _CardsScreenState extends State<CardsScreen> {
                                               },
                                             ),
                                           )
-                                        ],
-                                      ),
-                                    )
-                                  ],
+                  ],
+                  ),
+                )
+                ],
                                 )
                               ],
                             )
                           ],
                         ))),
               )
-            ],
+              ],
+            ),
           ),
-        ),
       ]),
     );
   }

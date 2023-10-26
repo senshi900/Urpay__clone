@@ -7,7 +7,8 @@ class HistoryDataset extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
+        List<History> buyhistory=dataset.map((jsondata) => History.fromjason(jsondata)).toList();
+
     return const Placeholder();
   }
 }

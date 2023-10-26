@@ -28,3 +28,25 @@ Column IconsContiner(IconData icon, Color color, String text) {
     ],
   );
 }
+
+Column IconText( String text,Color color) {
+  return Column(
+    children: [
+      ClipRRect(
+        borderRadius: BorderRadius.circular(70),
+        child: Container(
+          height: 40,
+          width: 40,
+          color: color,
+          child: Column(
+            children: [
+              SizedBox(height: 10),
+              Text("$text"),
+             
+            ],
+          ),
+        ),
+      )
+    ],
+  );
+}
