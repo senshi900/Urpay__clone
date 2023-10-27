@@ -1,6 +1,5 @@
 import 'package:clone_app/Screens/wedgets/change_able_icon.dart';
 import 'package:clone_app/Screens/wedgets/custom_icon.dart';
-import 'package:clone_app/Screens/wedgets/square_ads.dart';
 import 'package:clone_app/data/dataset.dart';
 import 'package:clone_app/data/history.dart';
 import 'package:flutter/material.dart';

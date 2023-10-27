@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Padding SquareAds(String imagePath) {
+Padding SquareAds(String imagePath,double width1,double height1) {
   // Accepting imagePath as a parameter
 
   return Padding(
@@ -9,8 +9,8 @@ Padding SquareAds(String imagePath) {
       borderRadius: BorderRadius.circular(16),
       child: Container(
         color: Colors.amber,
-        width: 350,
-        height: 150,
+        width: width1,
+        height: height1,
         child: Image.asset(
           imagePath,
           fit: BoxFit.fill,

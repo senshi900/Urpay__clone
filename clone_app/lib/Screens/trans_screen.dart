@@ -36,7 +36,7 @@ class _TransationsScreenState extends State<TransationsScreen> {
                   Padding(
                     padding: const EdgeInsets.only(left:4,right: 4),
                     child: IconsContiner(Icons.change_circle_outlined, Color(0xff009aed),
-                    "فواتير سداد"),
+                    "تحويل محلي"),
                   ),
                   IconsContiner(Icons.wallet, Color(0xfff25c82),
                   "فواتير سداد"),

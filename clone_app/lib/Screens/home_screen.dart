@@ -56,15 +56,15 @@ class _HomeScreenState extends State<HomeScreenn> {
               scrollDirection: Axis.horizontal,
               children: [
                 SquareAds(
-                    "lib\\imges\\WhatsApp Image 2023-10-24 at 17.23.35.jpg"),
+                    "lib\\imges\\WhatsApp Image 2023-10-24 at 17.23.35.jpg",350,150),
                 SquareAds(
-                    "lib\\imges\\WhatsApp Image 2023-10-24 at 17.23.35.jpg"),
+                    "lib\\imges\\WhatsApp Image 2023-10-24 at 17.23.35.jpg",350,150),
                 SquareAds(
-                    "lib\\imges\\WhatsApp Image 2023-10-24 at 17.23.35.jpg"),
+                    "lib\\imges\\WhatsApp Image 2023-10-24 at 17.23.35.jpg",350,150),
                 SquareAds(
-                    "lib\\imges\\WhatsApp Image 2023-10-24 at 17.23.35.jpg"),
+                    "lib\\imges\\WhatsApp Image 2023-10-24 at 17.23.35.jpg",350,150),
                 SquareAds(
-                    "lib\\imges\\WhatsApp Image 2023-10-24 at 17.23.35.jpg"),
+                    "lib\\imges\\WhatsApp Image 2023-10-24 at 17.23.35.jpg",350,150),
               ],
             ),
           ),
