@@ -30,14 +30,14 @@ class _MoreScreenState extends State<MoreScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
 
               children: [
-               IconsContiner(Icons.blur_circular_outlined, Color(0xff8064f6),
+               IconsContiner(Icons.people_alt, Color(0xff84ce5c),
                   " المستفيدون"),
                   Padding(
                     padding: const EdgeInsets.only(left:4,right: 4),
-                    child: IconsContiner(Icons.change_circle_outlined, Color(0xffffae77),
+                    child: IconsContiner(Icons.star_border_purple500_outlined, Color(0xffffae77),
                     " دعوة الاصدقاء"),
                   ),
-                  IconsContiner(Icons.arrow_back, Color(0xff61d1fe),
+                  IconsContiner(Icons.compare_arrows_sharp, Color(0xff61d1fe),
                   " قائمه الطلبات "),
             ],),
             
@@ -51,12 +51,12 @@ class _MoreScreenState extends State<MoreScreen> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-              Icon(Icons.arrow_back),
+              Icon(Icons.keyboard_arrow_left_sharp,color: Color(0xff6b6e75),),
               Padding(
                 padding: const EdgeInsets.only(left: 180),
                 child: Text("مركز الدعم و المساعدة",),
               ),
-              ChangeAbleIcon(Icons.ac_unit_outlined,Colors.black,15)
+              ChangeAbleIcon(Icons.headphones_outlined,Color(0xff6b7483),15)
             ],),
             
           ),
@@ -66,12 +66,12 @@ class _MoreScreenState extends State<MoreScreen> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-              Icon(Icons.arrow_back),
+             Icon(Icons.keyboard_arrow_left_sharp,color: Color(0xff6b6e75),),
               Padding(
-                padding: const EdgeInsets.only(left: 180),
-                child: Text("مركز الدعم و المساعدة",),
+                padding: const EdgeInsets.only(left: 220),
+                child: Text("  urpay قيم ",),
               ),
-              ChangeAbleIcon(Icons.ac_unit_outlined,Colors.black,15)
+              ChangeAbleIcon(Icons.thumb_up_alt_outlined,Color(0xff476bf1),15)
             ],),
             
           ),
@@ -81,12 +81,12 @@ class _MoreScreenState extends State<MoreScreen> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-              Icon(Icons.arrow_back),
+             Icon(Icons.keyboard_arrow_left_sharp,color: Color(0xff6b6e75),),
               Padding(
-                padding: const EdgeInsets.only(left: 180),
-                child: Text("مركز الدعم و المساعدة",),
+                padding: const EdgeInsets.only(left: 190),
+                child: Text("  سياسة الخصوصية",),
               ),
-              ChangeAbleIcon(Icons.ac_unit_outlined,Colors.black,15)
+              ChangeAbleIcon(Icons.verified_user_outlined,Color(0xff11cc5d),15)
             ],),
             
           ),
@@ -96,22 +96,22 @@ class _MoreScreenState extends State<MoreScreen> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-              Icon(Icons.arrow_back),
+              Icon(Icons.keyboard_arrow_left_sharp,color: Color(0xff6b6e75),),
               Padding(
-                padding: const EdgeInsets.only(left: 180),
-                child: Text("مركز الدعم و المساعدة",),
+                padding: const EdgeInsets.only(left: 200),
+                child: Text(" الشروط والاحكام",),
               ),
-              ChangeAbleIcon(Icons.ac_unit_outlined,Colors.black,15)
+              ChangeAbleIcon(Icons.book_outlined,Color(0xfff96690),15)
             ],),
             
           ),
-          Divider(),
+          SizedBox(height: 20,),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
            
-            Text("تسجيل الخروج"),
-             Icon(Icons.leave_bags_at_home),
+            Text("تسجيل الخروج",style: TextStyle(color: Color(0xff427093)),),
+             Icon(Icons.output,color: Color(0xff427093),),
           ],),
           Spacer(),
           Text("الاصدار 4.0.25(النسخة 1407)",style: TextStyle(fontSize: 12,color: Color(0xff7e7f81)),)

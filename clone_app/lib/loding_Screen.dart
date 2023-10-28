@@ -1,3 +1,4 @@
+import 'package:clone_app/Screens/pin_screen.dart';
 import 'package:clone_app/nav_bar_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +15,7 @@ class _LodingScreenState extends State<LodingScreen> {
     // TODO: implement initState
     super.initState();
     Future.delayed(Duration(seconds: 1),(){
-      Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context)=>const NavBar()),
+      Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context)=> PinScreen()),
        (route) => false);
     });
   }
